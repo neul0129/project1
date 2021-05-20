@@ -1,0 +1,108 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+
+<div id="wrap">
+<div id="container">
+	<div id="sidebar">
+		<p id="logo">
+			<a href="index.jsp"><img
+				src="https://d3o9uewzwdddwf.cloudfront.net/static/version0.0.0.7/frontend/Margaret_Howell/Default/default/images/logo.svg"
+				width="250"></a>
+		</p>
+
+		<div class="menu" style="position: fixed;">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+			<div id="accordian">
+				<ul>
+					<li>
+						<h3>
+							<a href="index.jsp?workgroup=container&work=women">WOMEN</a>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<a href="index.jsp?workgroup=container&work=men">MEN</a>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<a href="#">CAMPAIGNS</a>
+						</h3>
+						<ul>
+							<li style="padding-left: 12px !important;">
+							<a href="index.jsp?workgroup=container&work=autumn_winter_2020">AUTUMN WINTER 2020</a></li>
+							<li
+								style="padding-left: 12px !important; padding-bottom: 12px !important;">
+								<a href="index.jsp?workgroup=container&work=mhl">MHL. AW20</a></li>
+						</ul>
+					</li>
+					<li>
+						<h3>
+							<a href="#">SHOPS</a>
+						</h3>
+						<ul>
+							<li style="padding-left: 12px !important;"><a
+								href="index.jsp?workgroup=container&work=shops_margaret">MARGARET HOWELL</a></li>
+							<li
+								style="padding-left: 12px !important; padding-bottom: 12px !important;"><a
+								href="index.jsp?workgroup=container&work=shops_mhl">MHL.</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<h3>
+							<a href="index.jsp?workgroup=container&work=about">ABOUT</a>
+						</h3>
+					</li>
+					<li>
+						<h3>&nbsp;</h3>
+					</li>
+					<li>
+						<h3>
+							<a href="#">ONLINE STORE</a>
+						</h3>
+						<ul>
+							<li style="padding-left: 12px;">
+								<ul>
+									<li><a href="index.jsp?workgroup=product&work=product_list&category=SHIRTS">SHIRTS</a></li>
+									<li><a href="index.jsp?workgroup=product&work=product_list&category=OUTERWEAR">OUTERWEAR</a></li>
+									<li><a href="index.jsp?workgroup=product&work=product_list&category=KNITWEAR">KNITWEAR</a></li>
+									<li><a href="index.jsp?workgroup=product&work=product_list&category=SKIRTS">SKIRTS</a></li>
+									<li><a href="index.jsp?workgroup=product&work=product_list&category=TROUSERS">TROUSERS</a></li>
+									<li><a href="index.jsp?workgroup=product&work=product_list&category=ACCESSORIES">ACCESSORIES</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+
+				</ul>
+			</div>
+
+</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

@@ -1,0 +1,48 @@
+<%@page import="site.margaret.dao.CartDAO"%>
+<%@page import="site.margaret.dto.CartDTO"%>
+<%@page import="site.margaret.dto.MemberDTO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%-- 로그인 /비로그인 사용자 구분  --%>
+<%  
+	MemberDTO loginMember= (MemberDTO)session.getAttribute("loginMember");
+	//CartDTO cartQuentity=CartDAO.getDAO().selectCartList(id);
+	//int cartQuentity =CartDAO.getDAO().selectCartCount();
+	
+%>
+	
+<%
+	String loginId=(String)session.getAttribute("loginId");
+  
+%>	
+<div class="top-line">
+		<div id="header">
+			<div class="inner">
+				<div class="xans-element- xans-layout xans-layout-statelogoff ">
+					<ul class="top">
+						<li class="top-pc">
+						
+		    <% if(loginMember==null) {//비로그인 사용자 %>
+		<a href="index.jsp?workgroup=member&work=member_login&state=1">로그인</a>&nbsp;&nbsp;
+		<a href="index.jsp?workgroup=member&work=agree">회원가입</a>&nbsp;&nbsp;
+	<% } else {//로그인 사용자 %>
+	
+	      <a>[회원]님 환영합니다.&nbsp;&nbsp;</a>
+	      <a href="index.jsp?workgroup=member&work=mypage">MY ACCOUNT</a>&nbsp;&nbsp; 
+	      <a href="index.jsp?workgroup=member&work=member_logout_action">로그아웃</a>&nbsp;&nbsp;
+		  <% if(loginMember.getStatus()==9) {//로그인 사용자가 관리자인 경우 %>
+		  <a href="<%=request.getContextPath()%>/admin/admin_index.jsp?workgroup=main&work=main_action">관리자</a>&nbsp;&nbsp;
+		<% } %>
+	<% } %>
+						<li><a href="index.jsp?workgroup=cart&work=cart_list" class="top-menu">
+						<img src="./img/layout/cart-icon.png" class="cart"> &nbsp;<span class="count  EC-Layout_Basket-count-display"><span
+									class="EC-Layout-Basket-count"
+									style="margin-left: -22px; color: #FFF; font-size: 10px !important; height: 14px;">C</span></span>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+			</div>
+		</div>
+		
+		
